@@ -1072,7 +1072,7 @@ NUMBER_TYPES = [
     },
     {
         "name": "Charge First SOC Limit",
-        "register": H_CHARGE_FIRST_SOC_LIMIT_AND_START_TIME,
+        "register": H_CHARGE_FIRST_SOC_LIMIT,
         "register_type": "hold",
         "extract": lambda value: value & 0xFF,
         "compose": lambda orig, value: (orig & 0xFF00) | (value & 0xFF),
